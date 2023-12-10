@@ -37,6 +37,15 @@ Should be able to add new customer
    Input Text               id =firstname       Shital
    Input Text               id =lastname        Sapkota
    Input Text               id =city            Turku
+   Select From List By Value       id=stateorregion  Actual Finland
+   # for select from list by value it can take values like id, name, value... (see inspect / html/.. )
+   Select Radio Button      gender    female
+   Select Checkbox          name=promos-name
+   # also can be used id, if html tags have...
+   Click Button             Submit
+
+   #(you can see your html tags for your id, name, value or the title provided.
+    #In here CLICK BUTTON there is Submit, which is only title provided.)
 
    Sleep                    3s
    Close Browser
