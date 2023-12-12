@@ -47,6 +47,11 @@ https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html (for Keywords us
 
 **Also important things to remember to check --> right-click on the webpage and go to inspect, and then you can see the html tags for the whole webpage.**
 
+# For Creating a Variables in Robot Framework
+1. Scalar Variables: A scalar variable can only contain one value.
+2. List Variables: A list variable can contain multiple values.
+3. Dictionary Variables: A dictionary variable can contain multiple key-value pairs.
+
 Robot Framework is a very powerful generic test automation framework. 
 And there are lots of amazing things it can do, including running multiple scripts, execution order and randomization.
 We can use different script patterns and tag patterns to be able to run subsets of our scripts. 

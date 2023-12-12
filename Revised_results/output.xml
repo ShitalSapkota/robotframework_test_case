@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231212 14:27:38.551" rpa="false" schemaversion="4">
+<suite id="s1" name="Revised Crm" source="C:\Users\pradi\Documents\robotframework\crm\tests\revised_crm.robot">
+<test id="s1-t1" name="Should be able to add new customer" line="12">
+<kw name="Initialing Selenium">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231212 14:27:38.989" endtime="20231212 14:27:38.990"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231212 14:27:38.990" endtime="20231212 14:27:38.990"/>
+</kw>
+<status status="PASS" starttime="20231212 14:27:38.989" endtime="20231212 14:27:38.990"/>
+</kw>
+<kw name="Open the Browser">
+<kw name="Log" library="BuiltIn">
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231212 14:27:38.990" level="INFO">Starting the test case!</msg>
+<status status="PASS" starttime="20231212 14:27:38.990" endtime="20231212 14:27:38.990"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231212 14:27:38.991" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com/'.</msg>
+<status status="PASS" starttime="20231212 14:27:38.991" endtime="20231212 14:27:42.151"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Amazon.com. Spend less. Smile more.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231212 14:27:42.605" level="INFO">Current page contains text 'Amazon.com. Spend less. Smile more.'.</msg>
+<status status="PASS" starttime="20231212 14:27:42.151" endtime="20231212 14:27:42.605"/>
+</kw>
+<status status="PASS" starttime="20231212 14:27:38.990" endtime="20231212 14:27:42.605"/>
+</kw>
+<kw name="Browser to set">
+<kw name="Set Window Position" library="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" starttime="20231212 14:27:42.607" endtime="20231212 14:27:42.935"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>width=1935</arg>
+<arg>height=1030</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20231212 14:27:42.935" endtime="20231212 14:27:43.265"/>
+</kw>
+<status status="PASS" starttime="20231212 14:27:42.606" endtime="20231212 14:27:43.265"/>
+</kw>
+<kw name="Search for Product">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Best Sellers in Books</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231212 14:27:44.695" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231212 14:27:44.696" level="FAIL">Page should have contained text 'Best Sellers in Books' but did not.</msg>
+<status status="FAIL" starttime="20231212 14:27:43.266" endtime="20231212 14:27:44.734"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>src ='https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81YkqyaFVEL._AC_SY200_.jpg'</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231212 14:27:44.734" endtime="20231212 14:27:44.734"/>
+</kw>
+<status status="FAIL" starttime="20231212 14:27:43.266" endtime="20231212 14:27:44.734"/>
+</kw>
+<kw name="Close the Browser">
+<status status="NOT RUN" starttime="20231212 14:27:44.735" endtime="20231212 14:27:44.735"/>
+</kw>
+<doc>This is some basic info about the test.</doc>
+<tag>CRM Product</tag>
+<status status="FAIL" starttime="20231212 14:27:38.989" endtime="20231212 14:27:44.736">Page should have contained text 'Best Sellers in Books' but did not.</status>
+</test>
+<doc>This is some basic information about whole suite.</doc>
+<status status="FAIL" starttime="20231212 14:27:38.553" endtime="20231212 14:27:44.739"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CRM Product</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Revised Crm">Revised Crm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
